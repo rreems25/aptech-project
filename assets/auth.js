@@ -1,9 +1,3 @@
-/*
- * Alpine Ascents front-end demo authentication.
- * This is intentionally NOT real authentication. Never store real passwords here.
- * Registration records profile names/emails in this browser only; login accepts
- * a valid-looking email and a password of 6+ characters for demonstration.
- */
 (() => {
   'use strict';
   const $ = (id) => document.getElementById(id);
@@ -56,7 +50,7 @@
     fields.switchWrap.hidden = mode === 'forgot';
     fields.back.hidden = mode !== 'forgot';
     fields.title.textContent = mode === 'register' ? 'Create your profile' : mode === 'forgot' ? 'Reset password' : 'Welcome back';
-    fields.subtitle.textContent = mode === 'register' ? 'Join the Alpine Ascents community.' : mode === 'forgot' ? 'Sign in to your Alpine Ascents profile.';
+    fields.subtitle.textContent = mode === 'register' ? 'Join the Alpine Ascents community.' : mode === 'forgot' ? 'Try the password reset flow.' : 'Sign in to your Alpine Ascents profile.';
     fields.submit.textContent = mode === 'register' ? 'Create profile' : mode === 'forgot' ? 'Send reset instructions' : 'Sign in';
     fields.switchPrompt.textContent = mode === 'register' ? 'Already have a profile?' : 'New to Alpine Ascents?';
     fields.switchButton.textContent = mode === 'register' ? 'Sign in' : 'Create an account';
@@ -116,20 +110,20 @@
 
     if (mode === 'forgot') {
       const known = readProfiles().some(profile => profile.email === email);
-      showFeedback(known ? 'Demo reset flow complete: in a real site, instructions would be sent by email. No email was sent.' : 'If a demo profile exists for this email, a real site would send reset instructions. No email was sent.', 'info');
+      showFeedback(known ? 'Reset flow complete: in a real site, instructions would be sent by email. No email was sent.' : 'If a profile exists for this email, a real site would send reset instructions. No email was sent.', 'info');
       return;
     }
 
     if (fields.remember.checked) {
-      try { localStorage.setItem(emailKey, email); } catch (_) { /* optional preference */ }
+      try { localStorage.setItem(emailKey, email); } catch (_) {}
     } else {
-      try { localStorage.removeItem(emailKey); } catch (_) { /* optional preference */ }
+      try { localStorage.removeItem(emailKey); } catch (_) {}
     }
     const profiles = readProfiles();
     const profile = profiles.find(item => item.email === email);
     const displayName = profile?.name || email.split('@')[0];
     try { sessionStorage.setItem(sessionKey, JSON.stringify({ name: displayName, email })); }
-    catch (_) { /* session display still works */ }
+    catch (_) {}
     fields.navLabel.textContent = displayName.split(' ')[0] || 'Profile';
     fields.navButton.setAttribute('aria-label', `Signed in demo as ${email}. Click to sign out.`);
     showFeedback(`Demo sign-in successful. Welcome, ${displayName}! This is a local demonstration only.`, 'success');
@@ -141,10 +135,9 @@
   fields.navButton.addEventListener('click', (event) => {
     const signedIn = (() => { try { return !!sessionStorage.getItem(sessionKey); } catch (_) { return false; } })();
     if (!signedIn) return;
-    // Bootstrap's data API would otherwise open the modal; prevent that to sign out.
     event.preventDefault();
     event.stopPropagation();
-    try { sessionStorage.removeItem(sessionKey); } catch (_) { /* ignore */ }
+    try { sessionStorage.removeItem(sessionKey); } catch (_) {}
     fields.navLabel.textContent = 'Login';
     fields.navButton.setAttribute('aria-label', 'Open login dialog');
     fields.submit.disabled = false;
@@ -169,5 +162,5 @@
       fields.navLabel.textContent = (activeSession.name || 'Profile').split(' ')[0];
       fields.navButton.setAttribute('aria-label', `Signed in demo as ${activeSession.email}. Click to sign out.`);
     }
-  } catch (_) { /* no saved session */ }
+  } catch (_) {}
 })();
