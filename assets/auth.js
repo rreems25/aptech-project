@@ -56,7 +56,7 @@
     fields.switchWrap.hidden = mode === 'forgot';
     fields.back.hidden = mode !== 'forgot';
     fields.title.textContent = mode === 'register' ? 'Create your profile' : mode === 'forgot' ? 'Reset password' : 'Welcome back';
-    fields.subtitle.textContent = mode === 'register' ? 'Join the Alpine Ascents community.' : mode === 'forgot' ? 'Try the password reset flow in this demo.' : 'Sign in to your Alpine Ascents profile.';
+    fields.subtitle.textContent = mode === 'register' ? 'Join the Alpine Ascents community.' : mode === 'forgot' ? 'Sign in to your Alpine Ascents profile.';
     fields.submit.textContent = mode === 'register' ? 'Create profile' : mode === 'forgot' ? 'Send reset instructions' : 'Sign in';
     fields.switchPrompt.textContent = mode === 'register' ? 'Already have a profile?' : 'New to Alpine Ascents?';
     fields.switchButton.textContent = mode === 'register' ? 'Sign in' : 'Create an account';
