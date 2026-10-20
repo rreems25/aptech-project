@@ -1,0 +1,294 @@
+{
+  "site": {
+    "name": "Alpine Ascents",
+    "tagline": "A field guide to moving higher, smarter, and safer.",
+    "notice": "Mountain travel is serious business. Treat this guide as an educational starting point, not a replacement for hands-on training, local forecasts, guide advice, or rescue guidance."
+  },
+  "styles": [
+    {
+      "id": "alpine",
+      "name": "Alpine mountaineering",
+      "level": "Intermediate–Expert",
+      "region": "Worldwide",
+      "icon": "⛰",
+      "description": "A fast, self-reliant style that links snow, ice and rock in one continuous mountain route. Conditions and decisions can change quickly."
+    },
+    {
+      "id": "expedition",
+      "name": "Expedition climbing",
+      "level": "Advanced",
+      "region": "Himalaya & high ranges",
+      "icon": "🏔",
+      "description": "Longer journeys that may use camps, acclimatization rotations, fixed lines and a larger logistics plan for remote or high-altitude terrain."
+    },
+    {
+      "id": "rock",
+      "name": "Rock & mixed climbing",
+      "level": "Beginner–Expert",
+      "region": "Worldwide",
+      "icon": "🧗",
+      "description": "Technical movement on rock, or on routes that combine rock, snow and ice. Protection, route-finding and partner communication are central."
+    },
+    {
+      "id": "ice",
+      "name": "Ice climbing",
+      "level": "Intermediate–Expert",
+      "region": "Cold regions",
+      "icon": "❄️",
+      "description": "Climbing frozen waterfalls and alpine ice using specialist tools, crampons and protection. Ice quality and temperature can change the risk profile."
+    },
+    {
+      "id": "ski",
+      "name": "Ski mountaineering",
+      "level": "Intermediate–Expert",
+      "region": "Alpine & snowy ranges",
+      "icon": "🎿",
+      "description": "Combines uphill travel on skis with mountain route-finding and descents. Avalanche education and terrain choices are essential."
+    },
+    {
+      "id": "trek",
+      "name": "Mountaineering trekking",
+      "level": "Beginner–Advanced",
+      "region": "Worldwide",
+      "icon": "🥾",
+      "description": "Non-technical or lightly technical journeys at altitude that build endurance, mountain awareness and experience for bigger objectives."
+    }
+  ],
+  "records": [
+    {
+      "value": "8,848.86 m",
+      "label": "Mount Everest",
+      "detail": "World’s highest mountain above sea level; official height jointly announced by Nepal and China in 2020."
+    },
+    {
+      "value": "8,611 m",
+      "label": "K2",
+      "detail": "Second-highest mountain on Earth and famed for its demanding terrain and conditions."
+    },
+    {
+      "value": "6,190 m",
+      "label": "Denali",
+      "detail": "Highest mountain in North America, rising sharply above the Alaskan landscape."
+    },
+    {
+      "value": "1786",
+      "label": "Mont Blanc first ascent",
+      "detail": "Jacques Balmat and Michel-Gabriel Paccard made the first recorded ascent on 8 August 1786."
+    },
+    {
+      "value": "1953",
+      "label": "Everest first ascent",
+      "detail": "Tenzing Norgay and Edmund Hillary reached Everest’s summit on 29 May 1953."
+    },
+    {
+      "value": "1954",
+      "label": "K2 first ascent",
+      "detail": "Achille Compagnoni and Lino Lacedelli reached K2’s summit on 31 July 1954."
+    }
+  ],
+  "clubs": [
+    {
+      "id": "aac",
+      "name": "American Alpine Club",
+      "city": "Golden, Colorado",
+      "country": "United States",
+      "region": "Americas",
+      "coordinates": [
+        39.7555,
+        -105.2211
+      ],
+      "description": "Community, education, publications, grants and resources for climbers and alpinists.",
+      "url": "https://americanalpineclub.org/",
+      "map": "https://www.openstreetmap.org/?mlat=39.7555&mlon=-105.2211#map=13/39.7555/-105.2211"
+    },
+    {
+      "id": "ac",
+      "name": "The Alpine Club",
+      "city": "London, England",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "coordinates": [
+        51.5265,
+        -0.0847
+      ],
+      "description": "One of the world’s historic mountaineering clubs, supporting alpine knowledge and community.",
+      "url": "https://www.alpine-club.org.uk/",
+      "map": "https://www.openstreetmap.org/?mlat=51.5265&mlon=-0.0847#map=13/51.5265/-0.0847"
+    },
+    {
+      "id": "cai",
+      "name": "Club Alpino Italiano",
+      "city": "Milan, Lombardy",
+      "country": "Italy",
+      "region": "Europe",
+      "coordinates": [
+        45.4844,
+        9.205
+      ],
+      "description": "A national network supporting mountain culture, trails, huts, training and mountain protection.",
+      "url": "https://www.cai.it/",
+      "map": "https://www.openstreetmap.org/?mlat=45.4844&mlon=9.2050#map=13/45.4844/9.2050"
+    },
+    {
+      "id": "nma",
+      "name": "Nepal Mountaineering Association",
+      "city": "Kathmandu",
+      "country": "Nepal",
+      "region": "Asia",
+      "coordinates": [
+        27.7155,
+        85.3123
+      ],
+      "description": "Supports Nepal’s mountaineering community, training, mountain stewardship and climbing culture.",
+      "url": "https://nepalmountaineering.org/",
+      "map": "https://www.openstreetmap.org/?mlat=27.7155&mlon=85.3123#map=13/27.7155/85.3123"
+    },
+    {
+      "id": "nzac",
+      "name": "New Zealand Alpine Club",
+      "city": "Christchurch, Canterbury",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "coordinates": [
+        -43.533,
+        172.6306
+      ],
+      "description": "A member-led club sharing climbing education, hut access, local knowledge and mountain community.",
+      "url": "https://alpineclub.org.nz/",
+      "map": "https://www.openstreetmap.org/?mlat=-43.5330&mlon=172.6306#map=13/-43.5330/172.6306"
+    },
+    {
+      "id": "bmc",
+      "name": "British Mountaineering Council",
+      "city": "Manchester, England",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "coordinates": [
+        53.4794,
+        -2.2453
+      ],
+      "description": "Climbing and hill-walking advice, access guidance, training resources and community support.",
+      "url": "https://www.thebmc.co.uk/",
+      "map": "https://www.openstreetmap.org/?mlat=53.4794&mlon=-2.2453#map=12/53.4794/-2.2453"
+    }
+  ],
+  "stories": [
+    {
+      "year": "1786",
+      "place": "Mont Blanc · Alps",
+      "title": "A new chapter in alpinism",
+      "result": "First recorded summit ascent",
+      "description": "Jacques Balmat and Michel-Gabriel Paccard’s ascent became a landmark in the development of modern mountaineering, inspiring generations to study routes, conditions and mountain science."
+    },
+    {
+      "year": "1953",
+      "place": "Everest · Himalaya",
+      "title": "A team reaches the roof of the world",
+      "result": "First confirmed ascent of Everest",
+      "description": "Tenzing Norgay and Edmund Hillary reached the summit on 29 May 1953 after a carefully supported expedition. The achievement reflects teamwork, logistics, acclimatization and local expertise."
+    },
+    {
+      "year": "1954",
+      "place": "K2 · Karakoram",
+      "title": "Persistence on a formidable peak",
+      "result": "First ascent of K2",
+      "description": "Achille Compagnoni and Lino Lacedelli reached the summit on 31 July 1954. K2 remains a reminder that high-altitude objectives demand conservative decisions and serious preparation."
+    }
+  ],
+  "fieldNotes": [
+    {
+      "date": "16 Oct 2026",
+      "category": "Safety & access",
+      "title": "Initial Kalymnos inspection findings",
+      "summary": "The UIAA newsroom reports initial inspection findings linked to bolting and safety on Kalymnos. Follow the federation’s full updates and current equipment guidance before relying on fixed anchors or route hardware.",
+      "source": "UIAA Newsroom",
+      "url": "https://www.theuiaa.org/newsroom/"
+    },
+    {
+      "date": "06 Oct 2026",
+      "category": "Mountain protection",
+      "title": "Fire risk in the 2026 State of the Mountains Report",
+      "summary": "The UIAA highlighted fires as a focus of the 2026 State of the Mountains Report. Mountain stewardship includes understanding local wildfire restrictions, closures and changing seasonal conditions.",
+      "source": "UIAA Newsroom",
+      "url": "https://www.theuiaa.org/newsroom/"
+    },
+    {
+      "date": "02 Jun 2026",
+      "category": "Equipment & safety",
+      "title": "Safety standards continue to evolve",
+      "summary": "The UIAA Safety Commission reported ongoing work on harnesses for rental use, ski-mountaineering helmet standards and rock-anchor performance. Check current standards and manufacturer notices before every trip.",
+      "source": "UIAA Safety Commission",
+      "url": "https://www.theuiaa.org/raising-the-standards-uiaa-safecom-continues-to-deliver/"
+    },
+    {
+      "date": "17 Oct 2025",
+      "category": "Rope systems",
+      "title": "UIAA Standard 110 for static ropes",
+      "summary": "The UIAA announced its Static Ropes standard after a multi-year development process. Equipment labels and intended use matter: choose ropes for the system and context specified by the manufacturer.",
+      "source": "UIAA",
+      "url": "https://www.theuiaa.org/introducing-uiaa-safety-standard-110-for-static-ropes/"
+    },
+    {
+      "date": "05 Jan 2026",
+      "category": "Avalanche decision-making",
+      "title": "AI-assisted avalanche incident analysis",
+      "summary": "A mountain-operations article describes the use of AI-based methods to examine avalanche accident sequences and recurring decision-making patterns. It complements, rather than replaces, formal avalanche education and local bulletins.",
+      "source": "Mountain Warfare Centre of Excellence",
+      "url": "https://www.mwcoe.org/avalanche-update-ai-based-analysis-and-capability-development-in-mountain-operations/"
+    }
+  ],
+  "gallery": [
+    {
+      "type": "photo",
+      "title": "First light on the high ridge",
+      "category": "Photography",
+      "description": "A visual reminder that alpine conditions can change quickly; plan the whole route, not just the summit photo.",
+      "image": "assets/alpine-hero.png",
+      "position": "center 52%"
+    },
+    {
+      "type": "video",
+      "title": "Mountain safety & equipment standards",
+      "category": "Watch & learn",
+      "description": "Browse current safety resources and climbing education from the UIAA.",
+      "image": "assets/climbers-ice.png",
+      "position": "right 65%",
+      "url": "https://www.youtube.com/results?search_query=UIAA+mountaineering+safety+education"
+    },
+    {
+      "type": "video",
+      "title": "Alpine skills: crampons, ice axe & movement",
+      "category": "Skills video",
+      "description": "Find instructional demonstrations, then practise essential skills with a qualified instructor on suitable terrain.",
+      "image": "assets/alpine-camp.png",
+      "position": "center 35%",
+      "url": "https://www.youtube.com/results?search_query=British+Mountaineering+Council+crampon+ice+axe+skills"
+    }
+  ],
+  "guidelines": [
+    {
+      "title": "Plan the route and the turnaround",
+      "text": "Choose an objective that fits the least experienced team member, check access rules and set a turnaround time before leaving."
+    },
+    {
+      "title": "Read authoritative forecasts",
+      "text": "Review mountain weather, avalanche bulletins, recent reports and local closures. Reassess if conditions differ from the plan."
+    },
+    {
+      "title": "Build skills before committing",
+      "text": "Get hands-on instruction in navigation, rope systems, crampon and ice-axe use, crevasse rescue and emergency response as appropriate."
+    },
+    {
+      "title": "Carry and know your equipment",
+      "text": "Inspect PPE, carry suitable insulation, food, water, navigation and emergency supplies, and practise with the equipment you plan to use."
+    },
+    {
+      "title": "Manage altitude and fatigue",
+      "text": "Ascend gradually, recognise altitude-illness symptoms, communicate honestly about how the team feels and descend when symptoms warrant it."
+    },
+    {
+      "title": "Protect the mountain environment",
+      "text": "Follow local regulations, minimise waste, respect wildlife and cultures, avoid damaging vegetation, and use established huts or camps responsibly."
+    }
+  ]
+}

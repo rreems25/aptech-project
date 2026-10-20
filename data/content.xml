@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='utf-8'?>
+<alpineAscentsContent version="1.0" primaryStore="content.json">
+  <site>
+    <name>Alpine Ascents</name>
+    <tagline>A field guide to moving higher, smarter, and safer.</tagline>
+    <notice>Mountain travel is serious business. Treat this guide as an educational starting point, not a replacement for hands-on training, local forecasts, guide advice, or rescue guidance.</notice>
+  </site>
+  <styles>
+    <style>
+      <id>alpine</id>
+      <name>Alpine mountaineering</name>
+      <level>Intermediate–Expert</level>
+      <region>Worldwide</region>
+      <icon>⛰</icon>
+      <description>A fast, self-reliant style that links snow, ice and rock in one continuous mountain route. Conditions and decisions can change quickly.</description>
+    </style>
+    <style>
+      <id>expedition</id>
+      <name>Expedition climbing</name>
+      <level>Advanced</level>
+      <region>Himalaya &amp; high ranges</region>
+      <icon>🏔</icon>
+      <description>Longer journeys that may use camps, acclimatization rotations, fixed lines and a larger logistics plan for remote or high-altitude terrain.</description>
+    </style>
+    <style>
+      <id>rock</id>
+      <name>Rock &amp; mixed climbing</name>
+      <level>Beginner–Expert</level>
+      <region>Worldwide</region>
+      <icon>🧗</icon>
+      <description>Technical movement on rock, or on routes that combine rock, snow and ice. Protection, route-finding and partner communication are central.</description>
+    </style>
+    <style>
+      <id>ice</id>
+      <name>Ice climbing</name>
+      <level>Intermediate–Expert</level>
+      <region>Cold regions</region>
+      <icon>❄️</icon>
+      <description>Climbing frozen waterfalls and alpine ice using specialist tools, crampons and protection. Ice quality and temperature can change the risk profile.</description>
+    </style>
+    <style>
+      <id>ski</id>
+      <name>Ski mountaineering</name>
+      <level>Intermediate–Expert</level>
+      <region>Alpine &amp; snowy ranges</region>
+      <icon>🎿</icon>
+      <description>Combines uphill travel on skis with mountain route-finding and descents. Avalanche education and terrain choices are essential.</description>
+    </style>
+    <style>
+      <id>trek</id>
+      <name>Mountaineering trekking</name>
+      <level>Beginner–Advanced</level>
+      <region>Worldwide</region>
+      <icon>🥾</icon>
+      <description>Non-technical or lightly technical journeys at altitude that build endurance, mountain awareness and experience for bigger objectives.</description>
+    </style>
+  </styles>
+  <records>
+    <record>
+      <value>8,848.86 m</value>
+      <label>Mount Everest</label>
+      <detail>World’s highest mountain above sea level; official height jointly announced by Nepal and China in 2020.</detail>
+    </record>
+    <record>
+      <value>8,611 m</value>
+      <label>K2</label>
+      <detail>Second-highest mountain on Earth and famed for its demanding terrain and conditions.</detail>
+    </record>
+    <record>
+      <value>6,190 m</value>
+      <label>Denali</label>
+      <detail>Highest mountain in North America, rising sharply above the Alaskan landscape.</detail>
+    </record>
+    <record>
+      <value>1786</value>
+      <label>Mont Blanc first ascent</label>
+      <detail>Jacques Balmat and Michel-Gabriel Paccard made the first recorded ascent on 8 August 1786.</detail>
+    </record>
+    <record>
+      <value>1953</value>
+      <label>Everest first ascent</label>
+      <detail>Tenzing Norgay and Edmund Hillary reached Everest’s summit on 29 May 1953.</detail>
+    </record>
+    <record>
+      <value>1954</value>
+      <label>K2 first ascent</label>
+      <detail>Achille Compagnoni and Lino Lacedelli reached K2’s summit on 31 July 1954.</detail>
+    </record>
+  </records>
+  <clubs>
+    <club>
+      <id>aac</id>
+      <name>American Alpine Club</name>
+      <city>Golden, Colorado</city>
+      <country>United States</country>
+      <region>Americas</region>
+      <coordinates>
+        <item>39.7555</item>
+        <item>-105.2211</item>
+      </coordinates>
+      <description>Community, education, publications, grants and resources for climbers and alpinists.</description>
+      <url>https://americanalpineclub.org/</url>
+      <map>https://www.openstreetmap.org/?mlat=39.7555&amp;mlon=-105.2211#map=13/39.7555/-105.2211</map>
+    </club>
+    <club>
+      <id>ac</id>
+      <name>The Alpine Club</name>
+      <city>London, England</city>
+      <country>United Kingdom</country>
+      <region>Europe</region>
+      <coordinates>
+        <item>51.5265</item>
+        <item>-0.0847</item>
+      </coordinates>
+      <description>One of the world’s historic mountaineering clubs, supporting alpine knowledge and community.</description>
+      <url>https://www.alpine-club.org.uk/</url>
+      <map>https://www.openstreetmap.org/?mlat=51.5265&amp;mlon=-0.0847#map=13/51.5265/-0.0847</map>
+    </club>
+    <club>
+      <id>cai</id>
+      <name>Club Alpino Italiano</name>
+      <city>Milan, Lombardy</city>
+      <country>Italy</country>
+      <region>Europe</region>
+      <coordinates>
+        <item>45.4844</item>
+        <item>9.205</item>
+      </coordinates>
+      <description>A national network supporting mountain culture, trails, huts, training and mountain protection.</description>
+      <url>https://www.cai.it/</url>
+      <map>https://www.openstreetmap.org/?mlat=45.4844&amp;mlon=9.2050#map=13/45.4844/9.2050</map>
+    </club>
+    <club>
+      <id>nma</id>
+      <name>Nepal Mountaineering Association</name>
+      <city>Kathmandu</city>
+      <country>Nepal</country>
+      <region>Asia</region>
+      <coordinates>
+        <item>27.7155</item>
+        <item>85.3123</item>
+      </coordinates>
+      <description>Supports Nepal’s mountaineering community, training, mountain stewardship and climbing culture.</description>
+      <url>https://nepalmountaineering.org/</url>
+      <map>https://www.openstreetmap.org/?mlat=27.7155&amp;mlon=85.3123#map=13/27.7155/85.3123</map>
+    </club>
+    <club>
+      <id>nzac</id>
+      <name>New Zealand Alpine Club</name>
+      <city>Christchurch, Canterbury</city>
+      <country>New Zealand</country>
+      <region>Oceania</region>
+      <coordinates>
+        <item>-43.533</item>
+        <item>172.6306</item>
+      </coordinates>
+      <description>A member-led club sharing climbing education, hut access, local knowledge and mountain community.</description>
+      <url>https://alpineclub.org.nz/</url>
+      <map>https://www.openstreetmap.org/?mlat=-43.5330&amp;mlon=172.6306#map=13/-43.5330/172.6306</map>
+    </club>
+    <club>
+      <id>bmc</id>
+      <name>British Mountaineering Council</name>
+      <city>Manchester, England</city>
+      <country>United Kingdom</country>
+      <region>Europe</region>
+      <coordinates>
+        <item>53.4794</item>
+        <item>-2.2453</item>
+      </coordinates>
+      <description>Climbing and hill-walking advice, access guidance, training resources and community support.</description>
+      <url>https://www.thebmc.co.uk/</url>
+      <map>https://www.openstreetmap.org/?mlat=53.4794&amp;mlon=-2.2453#map=12/53.4794/-2.2453</map>
+    </club>
+  </clubs>
+  <stories>
+    <story>
+      <year>1786</year>
+      <place>Mont Blanc · Alps</place>
+      <title>A new chapter in alpinism</title>
+      <result>First recorded summit ascent</result>
+      <description>Jacques Balmat and Michel-Gabriel Paccard’s ascent became a landmark in the development of modern mountaineering, inspiring generations to study routes, conditions and mountain science.</description>
+    </story>
+    <story>
+      <year>1953</year>
+      <place>Everest · Himalaya</place>
+      <title>A team reaches the roof of the world</title>
+      <result>First confirmed ascent of Everest</result>
+      <description>Tenzing Norgay and Edmund Hillary reached the summit on 29 May 1953 after a carefully supported expedition. The achievement reflects teamwork, logistics, acclimatization and local expertise.</description>
+    </story>
+    <story>
+      <year>1954</year>
+      <place>K2 · Karakoram</place>
+      <title>Persistence on a formidable peak</title>
+      <result>First ascent of K2</result>
+      <description>Achille Compagnoni and Lino Lacedelli reached the summit on 31 July 1954. K2 remains a reminder that high-altitude objectives demand conservative decisions and serious preparation.</description>
+    </story>
+  </stories>
+  <fieldNotes>
+    <fieldNote>
+      <date>16 Oct 2026</date>
+      <category>Safety &amp; access</category>
+      <title>Initial Kalymnos inspection findings</title>
+      <summary>The UIAA newsroom reports initial inspection findings linked to bolting and safety on Kalymnos. Follow the federation’s full updates and current equipment guidance before relying on fixed anchors or route hardware.</summary>
+      <source>UIAA Newsroom</source>
+      <url>https://www.theuiaa.org/newsroom/</url>
+    </fieldNote>
+    <fieldNote>
+      <date>06 Oct 2026</date>
+      <category>Mountain protection</category>
+      <title>Fire risk in the 2026 State of the Mountains Report</title>
+      <summary>The UIAA highlighted fires as a focus of the 2026 State of the Mountains Report. Mountain stewardship includes understanding local wildfire restrictions, closures and changing seasonal conditions.</summary>
+      <source>UIAA Newsroom</source>
+      <url>https://www.theuiaa.org/newsroom/</url>
+    </fieldNote>
+    <fieldNote>
+      <date>02 Jun 2026</date>
+      <category>Equipment &amp; safety</category>
+      <title>Safety standards continue to evolve</title>
+      <summary>The UIAA Safety Commission reported ongoing work on harnesses for rental use, ski-mountaineering helmet standards and rock-anchor performance. Check current standards and manufacturer notices before every trip.</summary>
+      <source>UIAA Safety Commission</source>
+      <url>https://www.theuiaa.org/raising-the-standards-uiaa-safecom-continues-to-deliver/</url>
+    </fieldNote>
+    <fieldNote>
+      <date>17 Oct 2025</date>
+      <category>Rope systems</category>
+      <title>UIAA Standard 110 for static ropes</title>
+      <summary>The UIAA announced its Static Ropes standard after a multi-year development process. Equipment labels and intended use matter: choose ropes for the system and context specified by the manufacturer.</summary>
+      <source>UIAA</source>
+      <url>https://www.theuiaa.org/introducing-uiaa-safety-standard-110-for-static-ropes/</url>
+    </fieldNote>
+    <fieldNote>
+      <date>05 Jan 2026</date>
+      <category>Avalanche decision-making</category>
+      <title>AI-assisted avalanche incident analysis</title>
+      <summary>A mountain-operations article describes the use of AI-based methods to examine avalanche accident sequences and recurring decision-making patterns. It complements, rather than replaces, formal avalanche education and local bulletins.</summary>
+      <source>Mountain Warfare Centre of Excellence</source>
+      <url>https://www.mwcoe.org/avalanche-update-ai-based-analysis-and-capability-development-in-mountain-operations/</url>
+    </fieldNote>
+  </fieldNotes>
+  <gallery>
+    <galleryItem>
+      <type>photo</type>
+      <title>First light on the high ridge</title>
+      <category>Photography</category>
+      <description>A visual reminder that alpine conditions can change quickly; plan the whole route, not just the summit photo.</description>
+      <image>assets/alpine-hero.png</image>
+      <position>center 52%</position>
+    </galleryItem>
+    <galleryItem>
+      <type>video</type>
+      <title>Mountain safety &amp; equipment standards</title>
+      <category>Watch &amp; learn</category>
+      <description>Browse current safety resources and climbing education from the UIAA.</description>
+      <image>assets/climbers-ice.png</image>
+      <position>right 65%</position>
+      <url>https://www.youtube.com/results?search_query=UIAA+mountaineering+safety+education</url>
+    </galleryItem>
+    <galleryItem>
+      <type>video</type>
+      <title>Alpine skills: crampons, ice axe &amp; movement</title>
+      <category>Skills video</category>
+      <description>Find instructional demonstrations, then practise essential skills with a qualified instructor on suitable terrain.</description>
+      <image>assets/alpine-camp.png</image>
+      <position>center 35%</position>
+      <url>https://www.youtube.com/results?search_query=British+Mountaineering+Council+crampon+ice+axe+skills</url>
+    </galleryItem>
+  </gallery>
+  <guidelines>
+    <guideline>
+      <title>Plan the route and the turnaround</title>
+      <text>Choose an objective that fits the least experienced team member, check access rules and set a turnaround time before leaving.</text>
+    </guideline>
+    <guideline>
+      <title>Read authoritative forecasts</title>
+      <text>Review mountain weather, avalanche bulletins, recent reports and local closures. Reassess if conditions differ from the plan.</text>
+    </guideline>
+    <guideline>
+      <title>Build skills before committing</title>
+      <text>Get hands-on instruction in navigation, rope systems, crampon and ice-axe use, crevasse rescue and emergency response as appropriate.</text>
+    </guideline>
+    <guideline>
+      <title>Carry and know your equipment</title>
+      <text>Inspect PPE, carry suitable insulation, food, water, navigation and emergency supplies, and practise with the equipment you plan to use.</text>
+    </guideline>
+    <guideline>
+      <title>Manage altitude and fatigue</title>
+      <text>Ascend gradually, recognise altitude-illness symptoms, communicate honestly about how the team feels and descend when symptoms warrant it.</text>
+    </guideline>
+    <guideline>
+      <title>Protect the mountain environment</title>
+      <text>Follow local regulations, minimise waste, respect wildlife and cultures, avoid damaging vegetation, and use established huts or camps responsibly.</text>
+    </guideline>
+  </guidelines>
+</alpineAscentsContent>

@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#112a2a">
+  <meta name="description" content="Alpine Ascents — a practical, visual field guide to mountaineering history, styles, skills, safety, clubs and expedition stories.">
+  <title>Alpine Ascents — Go higher. Move wiser.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet">
+  <link href="assets/styles.css" rel="stylesheet">
+  <link href="assets/auth.css" rel="stylesheet">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="topline"><span><i class="bi bi-compass me-2"></i>THE ALPINE FIELD GUIDE</span><span class="topline-right">Respect the mountain. Return with a story.</span></div>
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark py-3" aria-label="Main navigation">
+      <div class="container-xl">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#home" aria-label="Alpine Ascents home">
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M4 38 19 12l8 13 5-8 12 21H4Z"/><path d="m14 21 5-9 8 13-5-4-4 3-4-3Z" class="brand-snow"/></svg></span>
+          <span class="brand-copy"><strong>Alpine <span>Ascents</span></strong><small>KNOW THE MOUNTAIN</small></span>
+        </a>
+        <div class="header-tools order-lg-3 ms-lg-3 d-flex align-items-center gap-2">
+          <div class="visitor-chip" title="Demo counter stored in this browser, not a global analytics count"><i class="bi bi-eye"></i><span id="visitor-count">1</span><small>VISITS</small></div>
+          <button class="auth-nav-button" type="button" data-bs-toggle="modal" data-bs-target="#login-modal" id="login-nav-button"><i class="bi bi-person-circle me-1"></i><span id="login-nav-label">Login</span></button>
+          <button class="navbar-toggler ms-1" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        </div>
+        <div class="collapse navbar-collapse order-lg-2" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item"><a class="nav-link active" href="#guide">The guide</a></li>
+            <li class="nav-item"><a class="nav-link" href="#records">Records</a></li>
+            <li class="nav-item"><a class="nav-link" href="#clubs">Find a club</a></li>
+            <li class="nav-item"><a class="nav-link" href="#stories">Stories</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#field-notes">Field notes</a></li>
+            <li class="nav-item ms-lg-2"><a class="nav-cta" href="#guidelines">Prepare to go <i class="bi bi-arrow-up-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-shade"></div>
+      <div class="container-xl hero-content">
+        <div class="hero-kicker"><span class="kicker-line"></span>FIELD NOTES FOR THE MOUNTAIN-MINDED</div>
+        <h1 id="hero-title">Go higher.<br><em>Move wiser.</em></h1>
+        <p>From the first trail to the final ridge, build your mountain knowledge with history, proven skills, safety essentials and stories from the high places.</p>
+        <div class="hero-actions"><a class="btn btn-summit" href="#guide">Explore the guide <i class="bi bi-arrow-down-right ms-2"></i></a><a class="hero-link" href="#clubs"><i class="bi bi-geo-alt me-2"></i>Find your mountain community</a></div>
+        <div class="hero-footnote"><span><i class="bi bi-mountain me-2"></i>Knowledge is part of your kit.</span><span class="hero-index">01 / 09</span></div>
+      </div>
+      <div class="hero-stamp" aria-hidden="true"><span>EST.</span><strong>1786</strong><small>THE SPIRIT OF<br>ALPINISM</small></div>
+    </section>
+
+    <section class="intro-ribbon" aria-label="Core principles">
+      <div class="container-xl ribbon-grid">
+        <div><span class="ribbon-icon"><i class="bi bi-map"></i></span><span><strong>Plan with purpose</strong><small>Routes, weather & decisions</small></span></div>
+        <div><span class="ribbon-icon"><i class="bi bi-shield-check"></i></span><span><strong>Put safety first</strong><small>Skills before summit fever</small></span></div>
+        <div><span class="ribbon-icon"><i class="bi bi-people"></i></span><span><strong>Climb as a team</strong><small>Trust, communication & care</small></span></div>
+        <div><span class="ribbon-icon"><i class="bi bi-leaf"></i></span><span><strong>Leave less behind</strong><small>Protect wild places</small></span></div>
+      </div>
+    </section>
+
+    <section class="section-pad guide-section" id="guide">
+      <div class="container-xl">
+        <div class="section-heading row align-items-end g-4">
+          <div class="col-lg-7"><p class="eyebrow">01 — THE KNOWLEDGE BASE</p><h2>A little more mountain<br><em>in every decision.</em></h2></div>
+          <div class="col-lg-5"><p class="section-lead">Mountaineering blends physical endurance, technical movement, environmental awareness and sound judgement. Start with the foundations, then keep learning from qualified instructors and local experts.</p></div>
+        </div>
+        <div class="guide-grid" id="guide-grid">
+          <a class="guide-card guide-history" href="#history"><span class="guide-number">01</span><span class="guide-icon"><i class="bi bi-hourglass-split"></i></span><h3>History</h3><p>From early alpine pioneers to modern expedition teams.</p><span class="card-arrow"><i class="bi bi-arrow-up-right"></i></span></a>
+          <a class="guide-card guide-styles" href="#styles"><span class="guide-number">02</span><span class="guide-icon"><i class="bi bi-signpost-split"></i></span><h3>Types & styles</h3><p>Explore alpine, expedition, rock, ice and ski approaches.</p><span class="card-arrow"><i class="bi bi-arrow-up-right"></i></span></a>
+          <a class="guide-card guide-techniques" href="#techniques"><span class="guide-number">03</span><span class="guide-icon"><i class="bi bi-link-45deg"></i></span><h3>Techniques</h3><p>Movement, rope systems, route-finding and rescue skills.</p><span class="card-arrow"><i class="bi bi-arrow-up-right"></i></span></a>
+          <a class="guide-card guide-shelter" href="#sheltering"><span class="guide-number">04</span><span class="guide-icon"><i class="bi bi-house"></i></span><h3>Sheltering</h3><p>Choose mountain huts, tents or emergency bivouac options.</p><span class="card-arrow"><i class="bi bi-arrow-up-right"></i></span></a>
+          <a class="guide-card guide-hazards" href="#hazards"><span class="guide-number">05</span><span class="guide-icon"><i class="bi bi-exclamation-triangle"></i></span><h3>Hazards</h3><p>Recognize altitude, weather, avalanche and terrain risks.</p><span class="card-arrow"><i class="bi bi-arrow-up-right"></i></span></a>
+          <a class="guide-card guide-guidelines" href="#guidelines"><span class="guide-number">06</span><span class="guide-icon"><i class="bi bi-check2-circle"></i></span><h3>Guidelines</h3><p>A practical pre-trip checklist for more thoughtful travel.</p><span class="card-arrow"><i class="bi bi-arrow-up-right"></i></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="history-section section-pad" id="history">
+      <div class="container-xl">
+        <div class="section-heading row g-4 align-items-end"><div class="col-lg-7"><p class="eyebrow eyebrow-light">02 — A SHORT HISTORY</p><h2>Every summit has<br><em>a story behind it.</em></h2></div><div class="col-lg-5"><p class="section-lead text-light-muted">The history of mountaineering is more than summit dates. It includes local knowledge, mountain communities, evolving equipment and changing ideas about exploration.</p></div></div>
+        <div class="timeline" id="history-timeline">
+          <article class="timeline-item"><span class="timeline-date">1786</span><div class="timeline-dot"></div><div><h3>Mont Blanc opens a new chapter</h3><p>Jacques Balmat and Michel-Gabriel Paccard complete the first recorded ascent of Mont Blanc, a landmark in the development of modern alpinism.</p></div></article>
+          <article class="timeline-item"><span class="timeline-date">1857</span><div class="timeline-dot"></div><div><h3>Climbing communities organize</h3><p>The Alpine Club is founded in the United Kingdom, helping formalize a shared community for mountaineering knowledge and exploration.</p></div></article>
+          <article class="timeline-item"><span class="timeline-date">1953</span><div class="timeline-dot"></div><div><h3>Everest's first confirmed ascent</h3><p>Tenzing Norgay and Edmund Hillary reach the summit on 29 May, supported by a wider expedition team and generations of Himalayan expertise.</p></div></article>
+          <article class="timeline-item"><span class="timeline-date">TODAY</span><div class="timeline-dot"></div><div><h3>Skill, science and stewardship</h3><p>Modern alpinists combine updated equipment standards, better forecasts and training with a growing responsibility to protect fragile mountain environments.</p></div></article>
+        </div>
+        <div class="history-image-note"><i class="bi bi-journal-bookmark me-2"></i>Milestones give context; they are not a measure of personal readiness.</div>
+      </div>
+    </section>
+
+    <section class="section-pad styles-section" id="styles">
+      <div class="container-xl">
+        <div class="section-heading row align-items-end g-4"><div class="col-lg-7"><p class="eyebrow">03 — CHOOSE YOUR APPROACH</p><h2>Different routes.<br><em>Different disciplines.</em></h2></div><div class="col-lg-5"><p class="section-lead">There is no single way to climb a mountain. Terrain, weather, objective, access and team experience all influence the style of ascent.</p></div></div>
+        <div id="styles-explorer" class="styles-explorer"></div>
+        <div class="soft-callout mt-4"><i class="bi bi-info-circle-fill"></i><p><strong>Training note</strong> Difficulty varies by route and conditions. Use local grading systems, take courses and progress gradually instead of relying on a label alone.</p></div>
+      </div>
+    </section>
+
+    <section class="techniques-section section-pad" id="techniques">
+      <div class="container-xl">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5"><p class="eyebrow eyebrow-light">04 — SKILLS THAT TRAVEL</p><h2>Strong systems.<br><em>Clear decisions.</em></h2><p class="section-lead text-light-muted">Technical skills only help when they are practised, checked and matched to the situation. Learn with a qualified mountain instructor before relying on them in consequential terrain.</p><a href="#guidelines" class="text-link-light">Review the field checklist <i class="bi bi-arrow-up-right ms-2"></i></a></div>
+          <div class="col-lg-7"><div class="technique-list">
+            <article><span class="technique-icon"><i class="bi bi-signpost"></i></span><div><h3>Route-finding & navigation</h3><p>Read maps, terrain and weather together. Carry a reliable navigation backup and know how to use it in poor visibility.</p></div><span class="technique-n">01</span></article>
+            <article><span class="technique-icon"><i class="bi bi-link"></i></span><div><h3>Ropework & protection</h3><p>Learn knots, belaying, anchor concepts and partner checks in supervised practice. Choose equipment for the intended system.</p></div><span class="technique-n">02</span></article>
+            <article><span class="technique-icon"><i class="bi bi-snow"></i></span><div><h3>Crampon & ice-axe movement</h3><p>Practise on appropriate low-angle terrain with instruction, including safe handling, footwork and the limits of self-arrest.</p></div><span class="technique-n">03</span></article>
+            <article><span class="technique-icon"><i class="bi bi-life-preserver"></i></span><div><h3>Emergency response & rescue</h3><p>Train for likely hazards on your route, communicate an emergency plan and know local rescue procedures before you go.</p></div><span class="technique-n">04</span></article>
+          </div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad shelter-hazard-section" id="sheltering">
+      <div class="container-xl">
+        <div class="section-heading row align-items-end g-4"><div class="col-lg-7"><p class="eyebrow">05 — REST & RECOVERY</p><h2>Shelter is part of<br><em>the route plan.</em></h2></div><div class="col-lg-5"><p class="section-lead">A safe night depends on weather, exposure, group condition and access. Select a shelter strategy before leaving, and always have a realistic contingency.</p></div></div>
+        <div class="row g-3 shelter-cards">
+          <div class="col-md-4"><article class="shelter-card"><div class="illustration illustration-hut"><i class="bi bi-house-heart"></i><span>01</span></div><div class="shelter-body"><h3>Mountain huts</h3><p>Useful waypoints in many ranges. Check opening dates, reservation rules, water availability and whether the hut is staffed.</p><span class="mini-label">PLANNED OVERNIGHT</span></div></article></div>
+          <div class="col-md-4"><article class="shelter-card"><div class="illustration illustration-tent"><i class="bi bi-triangle"></i><span>02</span></div><div class="shelter-body"><h3>Expedition tents</h3><p>Match tent design and campsite to wind, snow load, temperature and terrain. Practise pitching before the trip.</p><span class="mini-label">SELF-SUPPORTED</span></div></article></div>
+          <div class="col-md-4"><article class="shelter-card"><div class="illustration illustration-bivy"><i class="bi bi-shield"></i><span>03</span></div><div class="shelter-body"><h3>Emergency bivouac</h3><p>A contingency for delay or unplanned exposure, not a substitute for a proper plan, insulation and adequate equipment.</p><span class="mini-label">LAST-RESORT OPTION</span></div></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hazards-section section-pad" id="hazards">
+      <div class="container-xl">
+        <div class="section-heading row align-items-end g-4"><div class="col-lg-7"><p class="eyebrow eyebrow-light">06 — KNOW WHAT CAN CHANGE</p><h2>Respect the risk.<br><em>Keep options open.</em></h2></div><div class="col-lg-5"><p class="section-lead text-light-muted">Mountains are dynamic environments. A conservative decision made early is often safer than a desperate decision made late.</p></div></div>
+        <div class="row g-3" id="hazard-grid">
+          <div class="col-sm-6 col-lg-4"><article class="hazard-card"><span class="hazard-icon"><i class="bi bi-cloud-lightning-rain"></i></span><div class="hazard-level">WEATHER</div><h3>Rapid weather shifts</h3><p>Wind, storms, whiteout, cold and wet clothing can turn a manageable route serious. Monitor forecasts and retreat early.</p></article></div>
+          <div class="col-sm-6 col-lg-4"><article class="hazard-card"><span class="hazard-icon"><i class="bi bi-thermometer-snow"></i></span><div class="hazard-level">ALTITUDE & COLD</div><h3>Altitude illness & hypothermia</h3><p>Know warning signs, ascend gradually and descend when symptoms or exposure make continuing unsafe.</p></article></div>
+          <div class="col-sm-6 col-lg-4"><article class="hazard-card"><span class="hazard-icon"><i class="bi bi-water"></i></span><div class="hazard-level">GLACIERS</div><h3>Crevasses & hidden bridges</h3><p>Glacier travel requires appropriate roped-team skills, rescue training, route knowledge and current local information.</p></article></div>
+          <div class="col-sm-6 col-lg-4"><article class="hazard-card"><span class="hazard-icon"><i class="bi bi-layers-half"></i></span><div class="hazard-level">SNOWPACK</div><h3>Avalanches</h3><p>Get formal avalanche education, read the local bulletin, carry and practise with rescue equipment, and choose conservative terrain.</p></article></div>
+          <div class="col-sm-6 col-lg-4"><article class="hazard-card"><span class="hazard-icon"><i class="bi bi-bricks"></i></span><div class="hazard-level">ROCK & ICE</div><h3>Rockfall and icefall</h3><p>Assess overhead hazard, exposure, temperature and timing. Helmets reduce some injury risks but cannot make terrain safe.</p></article></div>
+          <div class="col-sm-6 col-lg-4"><article class="hazard-card"><span class="hazard-icon"><i class="bi bi-hourglass-split"></i></span><div class="hazard-level">HUMAN FACTORS</div><h3>Fatigue & summit pressure</h3><p>Track pace, hydration, daylight and group morale. A summit is optional; a safe return is the objective.</p></article></div>
+        </div>
+        <p class="hazard-footnote"><i class="bi bi-shield-exclamation me-2"></i>This is general educational information, not a complete safety manual or emergency advice.</p>
+      </div>
+    </section>
+
+    <section class="records-section section-pad" id="records">
+      <div class="container-xl">
+        <div class="section-heading row align-items-end g-4"><div class="col-lg-7"><p class="eyebrow">07 — MOUNTAIN RECORDS</p><h2>Numbers that put<br><em>the scale in view.</em></h2></div><div class="col-lg-5"><p class="section-lead">A few reference points from mountaineering history and geography. Heights can be revised as surveys and accepted measurements change.</p></div></div>
+        <div class="records-grid" id="records-grid"></div>
+        <div class="records-source">Reference note: mountain elevations and historical milestones are summarized for learning. Check authoritative survey, park and mountaineering sources for formal use.</div>
+      </div>
+    </section>
+
+    <section class="clubs-section section-pad" id="clubs">
+      <div class="container-xl">
+        <div class="section-heading row align-items-end g-4"><div class="col-lg-7"><p class="eyebrow eyebrow-light">08 — FIND YOUR COMMUNITY</p><h2>Mountains connect<br><em>people worldwide.</em></h2></div><div class="col-lg-5"><p class="section-lead text-light-muted">Explore established clubs and mountaineering organizations. Use the map to open their approximate location, then check the official website for membership, courses and local activities.</p></div></div>
+        <div class="club-layout">
+          <div class="club-directory"><div class="directory-top"><div><span class="mini-label">CLUB DIRECTORY</span><h3>Find a group</h3></div><span class="club-count"><strong id="club-total">6</strong> organizations</span></div>
+            <div class="finder-filters"><label class="visually-hidden" for="club-search">Search clubs by name or location</label><div class="search-wrap"><i class="bi bi-search"></i><input type="search" id="club-search" placeholder="Search club or location…"></div><label class="visually-hidden" for="region-filter">Filter by region</label><select id="region-filter" class="form-select"><option value="all">All regions</option><option value="Americas">Americas</option><option value="Europe">Europe</option><option value="Asia">Asia</option><option value="Oceania">Oceania</option></select></div>
+            <div class="club-list" id="club-list" aria-live="polite"></div>
+          </div>
+          <div class="map-panel"><div class="map-topline"><span><i class="bi bi-globe-americas me-2"></i>GLOBAL CLUB MAP</span><span class="map-hint"><i class="bi bi-pin-map me-1"></i>Approximate locations</span></div><div id="club-map" role="application" aria-label="Interactive map showing mountaineering organizations around the world"></div><div class="map-bottom"><i class="bi bi-info-circle me-2"></i>Map tiles need an internet connection. Club pins show general areas, not necessarily building entrances.</div></div>
+        </div>
+        <div class="location-privacy"><i class="bi bi-geo-alt"></i><p><strong>Localize the ticker</strong><span>Use the button in the live ticker to share your browser location. Coordinates stay in this page session and are used to update the ticker and your map marker only.</span></p><button class="btn btn-outline-light btn-sm" id="enable-location">Enable my location</button></div>
+      </div>
+    </section>
+
+    <section class="section-pad stories-section" id="stories">
+      <div class="container-xl">
+        <div class="section-heading row align-items-end g-4"><div class="col-lg-7"><p class="eyebrow">09 — STORIES FROM THE HIGH PLACES</p><h2>Great ascents are<br><em>never just one person.</em></h2></div><div class="col-lg-5"><p class="section-lead">These historic expedition milestones highlight preparation, teamwork and local mountain knowledge — the foundations that matter in organized camps today.</p></div></div>
+        <div class="story-grid" id="story-grid"></div>
+      </div>
+    </section>
+
+    <section class="gallery-section section-pad" id="gallery">
+      <div class="container-xl">
+        <div class="section-heading row align-items-end g-4"><div class="col-lg-7"><p class="eyebrow eyebrow-light">10 — THE FIELD GALLERY</p><h2>Study the landscape.<br><em>Learn from the field.</em></h2></div><div class="col-lg-5"><p class="section-lead text-light-muted">A visual pause and a launchpad for further learning. Video links open educational search results so you can choose the latest guidance from trusted organizations.</p></div></div>
+        <div class="gallery-grid" id="gallery-grid"></div>
+      </div>
+    </section>
+
+    <section class="field-notes-section section-pad" id="field-notes">
+      <div class="container-xl">
+        <div class="section-heading row align-items-end g-4"><div class="col-lg-7"><p class="eyebrow">11 — FIELD NOTES & DEVELOPMENTS</p><h2>Keep your knowledge<br><em>moving forward.</em></h2></div><div class="col-lg-5"><p class="section-lead">Safety standards, equipment guidance and mountain-risk analysis continue to evolve. These selected updates link to their originating organizations; always check for newer notices before relying on them.</p></div></div>
+        <div class="field-notes-grid" id="field-notes-grid"></div>
+        <div class="source-line"><span><i class="bi bi-check2-circle me-2"></i>Source-led reading</span><a href="https://www.theuiaa.org/newsroom/" target="_blank" rel="noopener">Browse the UIAA newsroom <i class="bi bi-arrow-up-right ms-1"></i></a></div>
+      </div>
+    </section>
+
+    <section class="guidelines-section section-pad" id="guidelines">
+      <div class="container-xl">
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-5 guidelines-intro"><p class="eyebrow eyebrow-light">BEFORE YOU LEAVE</p><h2>Your mountain<br><em>readiness check.</em></h2><p class="section-lead text-light-muted">Use this as a discussion starter with your team. Checking a box cannot replace training, sound judgement or current local advice.</p><div class="check-progress"><div class="d-flex justify-content-between"><span>Checklist progress</span><strong id="check-progress-label">0 of 6</strong></div><div class="progress"><div class="progress-bar" id="check-progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0" style="width:0%"></div></div></div><button class="btn btn-summit mt-4" id="reset-checklist" type="button">Reset checklist <i class="bi bi-arrow-counterclockwise ms-2"></i></button></div>
+          <div class="col-lg-7"><div class="guidelines-list" id="guidelines-list"></div><div class="emergency-note"><i class="bi bi-exclamation-triangle-fill"></i><div><strong>When in doubt, turn around.</strong><p>The safest decision may be to wait, change the route or abandon the objective. In an emergency, contact local emergency services or mountain rescue.</p></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-cta"><div class="container-xl closing-inner"><div><p class="eyebrow eyebrow-light">YOUR NEXT STEP STARTS HERE</p><h2>Curiosity gets you there.<br><em>Preparation brings you home.</em></h2></div><a href="#clubs" class="btn btn-summit">Find your community <i class="bi bi-arrow-up-right ms-2"></i></a></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container-xl"><div class="footer-main"><a class="navbar-brand d-flex align-items-center gap-2" href="#home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M4 38 19 12l8 13 5-8 12 21H4Z"/><path d="m14 21 5-9 8 13-5-4-4 3-4-3Z" class="brand-snow"/></svg></span><span class="brand-copy"><strong>Alpine <span>Ascents</span></strong><small>KNOW THE MOUNTAIN</small></span></a><p>A learning-first field guide for people who feel at home in the high places.</p><div class="footer-links"><a href="#guide">The guide</a><a href="#clubs">Clubs</a><a href="#field-notes">Field notes</a><a href="#guidelines">Readiness check</a></div></div><div class="footer-bottom"><span>© <span id="footer-year"></span> Alpine Ascents · Educational demo website</span><span>Respect local knowledge. Leave no trace.</span></div></div></footer>
+
+  <div class="live-ticker" aria-label="Live date, time and browser location ticker"><div class="ticker-track" id="ticker-track"><span class="ticker-item"><i class="bi bi-calendar3"></i><strong id="ticker-date">Loading date…</strong></span><span class="ticker-item"><i class="bi bi-clock"></i><strong id="ticker-time">Loading time…</strong></span><span class="ticker-item"><i class="bi bi-geo-alt"></i><strong id="ticker-location">Location not enabled</strong></span><span class="ticker-item ticker-note">ALPINE ASCENTS <span>·</span> KNOW THE MOUNTAIN <span>·</span> RESPECT THE RIDGE</span><span class="ticker-item" aria-hidden="true"><i class="bi bi-calendar3"></i><strong id="ticker-date-copy">Loading date…</strong></span><span class="ticker-item" aria-hidden="true"><i class="bi bi-clock"></i><strong id="ticker-time-copy">Loading time…</strong></span><span class="ticker-item" aria-hidden="true"><i class="bi bi-geo-alt"></i><strong id="ticker-location-copy">Location not enabled</strong></span><span class="ticker-item ticker-note" aria-hidden="true">ALPINE ASCENTS <span>·</span> KNOW THE MOUNTAIN <span>·</span> RESPECT THE RIDGE</span></div><button type="button" id="ticker-location-button" aria-label="Enable location for ticker" title="Enable browser location"><i class="bi bi-crosshair"></i></button></div>
+
+  <div class="modal fade auth-modal" id="login-modal" tabindex="-1" aria-labelledby="auth-modal-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content auth-modal-content">
+        <div class="modal-header auth-modal-header">
+          <div class="auth-brand-mark"><i class="bi bi-mountain"></i></div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close login dialog"></button>
+        </div>
+        <div class="modal-body auth-modal-body">
+          <p class="auth-eyebrow">YOUR NEXT ADVENTURE</p>
+          <h2 id="auth-modal-title">Welcome back</h2>
+          <p class="auth-subtitle" id="auth-subtitle">Sign in to your Alpine Ascents profile.</p>
+          <div class="auth-demo-notice"><i class="bi bi-info-circle"></i><span>Passwords are protected using appropriate security measures.</span></div>
+          <div class="auth-feedback" id="auth-feedback" role="status" aria-live="polite" hidden></div>
+          <form id="auth-form" novalidate>
+            <div class="mb-3 auth-name-field" id="auth-name-wrap" hidden>
+              <label class="form-label" for="auth-name">Your name</label>
+              <input class="form-control auth-input" id="auth-name" name="name" type="text" autocomplete="name" placeholder="Alex Mountain" />
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="auth-email">Email address</label>
+              <div class="auth-input-wrap"><i class="bi bi-envelope"></i><input class="form-control auth-input" id="auth-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required /></div>
+              <div class="invalid-feedback">Enter a valid email address.</div>
+            </div>
+            <div class="mb-2 auth-password-field" id="auth-password-wrap">
+              <label class="form-label" for="auth-password">Password</label>
+              <div class="auth-input-wrap"><i class="bi bi-lock"></i><input class="form-control auth-input" id="auth-password" name="password" type="password" autocomplete="current-password" minlength="6" placeholder="At least 6 characters" required /><button class="auth-password-toggle" type="button" id="auth-toggle-password" aria-label="Show password" title="Show password"><i class="bi bi-eye"></i></button></div>
+              <div class="invalid-feedback">Enter at least 6 characters.</div>
+            </div>
+            <div class="auth-form-options" id="auth-login-options"><label class="auth-remember"><input class="form-check-input" id="auth-remember" type="checkbox" /> <span>Remember my email</span></label><button type="button" class="auth-text-button" id="auth-forgot-button">Forgot password?</button></div>
+            <button class="btn auth-submit w-100" type="submit" id="auth-submit"><span id="auth-submit-label">Sign in</span><i class="bi bi-arrow-right ms-2"></i></button>
+          </form>
+          <div class="auth-switch" id="auth-switch-wrap"><span id="auth-switch-prompt">New to Alpine Ascents?</span> <button class="auth-text-button" type="button" id="auth-switch-button">Create an account</button></div>
+          <button class="auth-back-button" type="button" id="auth-back-button" hidden><i class="bi bi-arrow-left me-1"></i> Back to sign in</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="photo-modal" tabindex="-1" aria-labelledby="photo-modal-title" aria-hidden="true"><div class="modal-dialog modal-dialog-centered modal-xl"><div class="modal-content photo-modal-content"><div class="modal-header"><div><div class="mini-label">FIELD GALLERY</div><h2 class="modal-title fs-5" id="photo-modal-title">Alpine Ascents</h2></div><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body"><img id="modal-photo" src="assets/alpine-hero.png" alt="Alpine mountain range at sunrise"><p id="modal-photo-caption"></p></div></div></div></div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="data/content.js"></script>
+  <script src="assets/app.js"></script>
+  <script src="assets/auth.js"></script>
+</body>
+</html>
